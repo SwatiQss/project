@@ -1,8 +1,8 @@
 html,
 body {
   height: 100%;  /* Ensure both html and body take up the full height */
-  margin: 0;     /* Remove default margin */
-  padding: 0;    /* Remove default padding */
+  margin: 10;     /* Remove default margin */
+  padding: 10;    /* Remove default padding */
   background-color: #eef0f5;  /* Example background color (Tailwind bg-blue-800 equivalent) */
 }
 

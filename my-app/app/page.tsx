@@ -1,5 +1,6 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Form1 from "@/components/form";
+import Cascade from "@/components/cascade";
+import './page.css'
 
 export default function Home() {
   return (
@@ -7,6 +8,12 @@ export default function Home() {
        <div className='merge-page'>
      <p className='heading'>Master Name Index</p>
      <h3 className='sub-heading'>Master Name Record Merge</h3>
+     <Cascade />
+     <p className='form-heading'>Primary Master Name Record</p>
+     <div className="form">
+     <Form1/>
+     </div>
+     
     </div>
       
     
