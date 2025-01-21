@@ -1,8 +1,7 @@
 'use client'; // Add this to mark the component as a client-side component
-import './form.css';
-import Cascade from './cascade';
-import Cascade2 from './cascade2';
+import './form2.css';
 import React, { useState } from 'react';
+import Button1 from '../button/button';
 
 // Define the form values types
 interface FormValues {
@@ -136,7 +135,7 @@ const Form1: React.FC = () => {
         </div>
       </div>
 
-      <div className="phone-id flex space-x-6">
+      <div className="phone-id">
         <div className="form id flex-1">
           <label className="label">ID</label>
           <input
@@ -182,7 +181,7 @@ const Form1: React.FC = () => {
           <div className="form height flex-1">
             <label className="label">Height</label>
             <input
-              className="input"
+              className="input2"
               type="text"
               name="Id"
               value={formValues.password}
@@ -192,7 +191,7 @@ const Form1: React.FC = () => {
           <div className="form weight flex-1">
             <label className="label">Weight</label>
             <input
-              className="input"
+              className="input2"
               type="text"
               name="Id"
               value={formValues.password}
@@ -203,11 +202,100 @@ const Form1: React.FC = () => {
         
       </div>
       <p className='search'>Address</p>
+
       <div className='address'>
-        <div className=''>
+        <div className='form street'>
+        <label className="label">Street Number</label>
+            <input
+              className="input2"
+              type="text"
+              name="Id"
+              value={formValues.password}
+              onChange={handleChange}
+            />
+
+        </div>
+        <div className='form street'>
+        <label className="label">Street Prefix</label>
+            <select className='select'> 
+              <option>
+
+              </option>
+            </select>
+
+        </div>
+        <div className='form street'>
+        <label className="label">Street</label>
+            <input
+              className="input2"
+              type="text"
+              name="Id"
+              value={formValues.password}
+              onChange={handleChange}
+            />
+
+        </div>
+        <div className='form street'>
+        <label className="label">Street Suffix</label>
+            <input
+              className="input2"
+              type="text"
+              name="Id"
+              value={formValues.password}
+              onChange={handleChange}
+            />
 
         </div>
 
+      </div>
+      <div className='address'>
+        <div className='form street'>
+        <label className="label">City</label>
+            <input
+              className="input2"
+              type="text"
+              name="Id"
+              value={formValues.password}
+              onChange={handleChange}
+            />
+
+        </div>
+        <div className='form street'>
+        <label className="label">State</label>
+            <select className='select'> 
+              <option>
+
+              </option>
+            </select>
+
+        </div>
+        <div className='form street'>
+        <label className="label">Zip Code</label>
+            <input
+              className="input2"
+              type="text"
+              name="Id"
+              value={formValues.password}
+              onChange={handleChange}
+            />
+
+        </div>
+        <div className='form street'>
+        <label className="label">Country</label>
+            <input
+              className="input2"
+              type="text"
+              name="Id"
+              value={formValues.password}
+              onChange={handleChange}
+            />
+
+        </div>
+
+      </div>
+
+      <div className='button-container'>
+      <Button1/>
       </div>
     </form>
   );

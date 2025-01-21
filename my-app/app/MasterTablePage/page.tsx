@@ -1,7 +1,7 @@
-import Form1 from "@/components/form/form";
 import Cascade from "@/components/cascade/cascade";
 import './page.css'
-
+import MasterTable from "@/components/MasterTable/MasterTable";
+import Button1 from "@/components/buttonSelect/buttonSelect";
 export default function Home() {
   return (
     
@@ -10,9 +10,13 @@ export default function Home() {
      <h3 className='sub-heading'>Master Name Record Merge</h3>
      <Cascade />
      <p className='form-heading'>Primary Master Name Record</p>
-     <div className="form">
-     <Form1/>
+     <p className="table-heading">Select Name</p>
+     <div className="table">
+     <MasterTable/>
      </div>
+     <div className='button-container'>
+      <Button1/>
+      </div>
      
     </div>
       
