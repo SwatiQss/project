@@ -1,35 +1,31 @@
-
-import './page.css'
+import './page.css';
 import MasterTable from '@/components/MasterTable2/MasterTable2';
 import Form1 from '@/components/form2/form2';
 import Button1 from '@/components/buttonSelect/buttonSelect';
 import CaseCard from '@/components/Cards/casecard';
+import { Row, Col } from 'antd';
+
 export default function Home() {
-
   return (
-
     <div className="main">
-      <div className='merge-page'>
-        <p className='heading'>Master Name Index</p>
-        <h3 className='sub-heading'>Master Name Record Merge</h3>
-        <p className="table-heading">Select Name</p>
-        <CaseCard />
-
-      </div>
-      <div className="table-head">
-
-        <p className="table-heading">Comparable Record</p>
-        <p className='select'>Select Name </p>
-        <div className="table">
-          <MasterTable />
-        </div>
-        <div className='button-container'>
-          <Button1 />
-        </div>
-      </div>
-
+           <p className="heading">Master Name Index</p>
+           <h3 className="sub-heading">Master Name Record Merge</h3>
+      <Row gutter={[16, 16]} className="content-row">
+        <Col xs={24} md={12} className="merge-page">
+          <p className="table-heading">Primary Master Name Record</p>
+         <div className='casecard'> <CaseCard /></div>
+        </Col>
+        <Col xs={24} md={12} className="table-head">
+          <p className="table-heading">Comparable Record</p>
+          <p className="select">Select Name</p>
+          <div className="table">
+            <MasterTable />
+          </div>
+          <div className="button-container">
+            <Button1 />
+          </div>
+        </Col>
+      </Row>
     </div>
-
-
   );
 }
