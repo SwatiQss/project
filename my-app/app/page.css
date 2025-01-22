@@ -12,6 +12,19 @@
 
 .form{
   background-color: #fff;
-  width: 60%;
+  width: 100%;
   padding: 4px;
+}
+
+.main{
+  display: flex;
+  gap: 2px;
+}
+
+.merge-page{
+  width: 60%;
+}
+.line{
+  padding: 5px;
+  margin-top: 16%;
 }

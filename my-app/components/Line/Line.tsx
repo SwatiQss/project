@@ -15,7 +15,7 @@ const VerticalLineWithDrawer: React.FC = () => {
           type="vertical"
           style={{
             height: "100%",
-            borderLeft: "2px dashed #ccc",
+            borderLeft: "2px dashed black",
             margin: 0,
           }}
         />
