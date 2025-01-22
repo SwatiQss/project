@@ -22,12 +22,15 @@ const VerticalLineWithDrawer: React.FC = () => {
         {/* Drawer Button */}
         <Button
           type="primary"
-          shape="circle"
           icon={<LeftOutlined />}
           style={{
             position: "absolute",
             top: "40%",
             left: "50%",
+            border:"none",
+            borderRadius:"20px",
+            height:"40px",
+            width:"20px",
             transform: "translate(-50%, -50%)",
             zIndex: 1,
           }}
@@ -35,12 +38,15 @@ const VerticalLineWithDrawer: React.FC = () => {
         />
          <Button
           type="primary"
-          shape="circle"
           icon={<RightOutlined/>}
           style={{
             position: "absolute",
             top: "60%",
             left: "50%",
+            border:"none",
+            borderRadius:"20px",
+            height:"40px",
+            width:"20px",
             transform: "translate(-50%, -50%)",
             zIndex: 1,
           }}
