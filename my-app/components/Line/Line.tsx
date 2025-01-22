@@ -1,0 +1,56 @@
+"use client";
+
+import React, { useState } from "react";
+import { Drawer, Button, Divider } from "antd";
+import { LeftOutlined, RightOutlined } from "@ant-design/icons";
+
+const VerticalLineWithDrawer: React.FC = () => {
+  const [visible, setVisible] = useState(false);
+
+  return (
+    <div style={{ display: "flex", alignItems: "center", height: "100vh" }}>
+      {/* Vertical dashed line */}
+      <div style={{ position: "relative", height: "100%", width: "2px", background: "transparent" }}>
+        <Divider
+          type="vertical"
+          style={{
+            height: "100%",
+            borderLeft: "2px dashed #ccc",
+            margin: 0,
+          }}
+        />
+        {/* Drawer Button */}
+        <Button
+          type="primary"
+          shape="circle"
+          icon={<LeftOutlined />}
+          style={{
+            position: "absolute",
+            top: "40%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            zIndex: 1,
+          }}
+         
+        />
+         <Button
+          type="primary"
+          shape="circle"
+          icon={<RightOutlined/>}
+          style={{
+            position: "absolute",
+            top: "60%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            zIndex: 1,
+          }}
+         
+        />
+      </div>
+
+      
+    </div>
+  );
+};
+
+export default VerticalLineWithDrawer;
